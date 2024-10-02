@@ -1,8 +1,8 @@
-@import url('C:\Users\16054\personal-blog\static\navbar.css');
-@import url('C:\Users\16054\personal-blog\static\search.css');
-@import url('C:\Users\16054\personal-blog\static\banner.css');
-@import url('C:\Users\16054\personal-blog\static\post.css');
-@import url('C:\Users\16054\personal-blog\static\blogstyle.css'); 
+@import url('/static/navbar.css');
+@import url('/static/search.css');
+@import url('/static/banner.css');
+@import url('/static/post.css');
+@import url('/static/blogstyle.css'); 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 :root {
     --Playfair: 'Playfair Display', serif;
