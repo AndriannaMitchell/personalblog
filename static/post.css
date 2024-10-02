@@ -1,0 +1,73 @@
+
+.blog-posts {
+    padding: 2rem 0;
+    background-color: #faf5f6;
+    font-weight: 300;
+    word-spacing: auto;
+    line-height: auto;
+    font-size: 1.2rem;
+  
+}
+.post {
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 2rem; 
+    box-sizing: border-box; 
+    text-align: center;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill); 
+    gap: 6rem; 
+    
+}
+
+.post img {
+    width: 500px;
+    height:500px;
+    padding: 2rem; 
+    background-color:linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+    box-shadow: 0 4px 15px 0 rgba(255, 118, 140, 0.75);
+    opacity: 80%; 
+    object-fit: cover;
+    margin:auto;
+    
+    
+}
+
+
+.post-title {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.post-excerpt {
+    margin: 0 1rem 1rem;
+    color: #050000;
+    text-align: left;
+    
+}
+.readbutton {
+    border: none;
+    font-family: var(--Roboto);
+    font-size: 2rem;
+    width: 23%;
+    outline: 0;
+    padding: 0.6rem 0;
+    background-color:rgba(255, 118, 140, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(255, 118, 140, 0.75);
+    margin: auto;
+    border-style:inherit;
+    border-radius: 5%;
+    opacity: 50%;
+ 
+}
+
+.readbutton:hover {
+    background: var(--main-dark); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.1); 
+}
+
+q{
+    font-style: italic;
+}
