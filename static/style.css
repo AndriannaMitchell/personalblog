@@ -35,7 +35,7 @@ body {
 
 .header {
     min-height: 100vh;
-    background:linear-gradient(rgba(236, 146, 196, 0.4), rgba(119, 174, 236, 0.4)),url('C:\Users\16054\personal-blog\images\shortcake.jpg') center/cover no-repeat fixed;
+    background:linear-gradient(rgba(236, 146, 196, 0.4), rgba(119, 174, 236, 0.4)),url('/images/shortcake.jpg') center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
