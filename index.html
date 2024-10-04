@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="static\style.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
                     <div class="navbar-nav">
                         <a href="index.html">Home</a>
                         <a href="pages/design.html">Recipes</a>
-                        <a href="pages/blog.html">Blog</a>
+                        <a href="/pages/blog.html">Blog</a>
                         <a href="pages/about.html">About</a>
                     </div>
                 </div>
@@ -42,36 +42,42 @@
     <section class="blog-posts">
         <div class="container">
             <article class="post">
-                <h2 class="post-title">Common Allergens: What You Need to Know</h2>
                 <img class="img" src="images/blogphoto1.jpg" alt="pink macarons stacked on top of each other with a pink background">
-                <p class="blog-content">
-                    In our increasingly health-conscious society, understanding common allergens has never been more crucial. Allergies can affect anyone, and knowing what to look out for can make a significant difference in managing your health and well-being.
-                </p>
-                <button class="readbutton">
-                    <a href="pages/readme.html" class="read-more">Read More</a>
-                </button>
+                <div class="post-text">
+                    <h2 class="post-title">Common Allergens: What You Need to Know</h2>
+                    <p class="blog-content">
+                        In our increasingly health-conscious society, understanding common allergens has never been more crucial. Allergies can affect anyone, and knowing what to look out for can make a significant difference in managing your health and well-being.
+                    </p>
+                    <button class="readbutton">
+                        <a href="pages/readme.html" class="read-more">Read More</a>
+                    </button>
+                </div>
+            </article>
+                
+            <article class="post">
+                <img src="images/shrimp.jpg" alt="shrimp on a plate" />
+                <div class="post-text"> <!-- Added this div to match the structure -->
+                    <h2 class="post-title">The Basics of Allergies</h2>
+                    <p class="blog-content"> <!-- Changed to blog-content to match -->
+                        Understanding the basics of allergies is essential for anyone looking to manage allergic reactions.
+                    </p>
+                    <button class="readbutton">
+                        <a href="pages/readme2.html" class="read-more">Read More</a>
+                    </button>
+                </div>
             </article>
 
             <article class="post">
-                <h2 class="post-title">The Basics of Allergies</h2>
-                <img class="img" src="images/shrimp.jpg" alt="shrimp on a plate with carrots and sauce">
-                <p class="blog-content">
-                    Understanding the basics of allergies is essential for anyone looking to manage or avoid allergic reactions. Here’s a primer on what allergies are, common types, and how to manage them.
-                </p>
-                <button class="readbutton">
-                    <a href="pages/readme2.html" class="read-more">Read More</a>
-                </button>     
-            </article>
-
-            <article class="post">
-                <h2 class="post-title">Allergen Substitutions</h2>
-                <img src="images/milk.jpg" alt="a strawberry and splashing milk on a spoon">
-                <p class="blog-content">
-                    Finding suitable substitutes for common allergens can make a significant difference in your cooking and baking. Here’s a guide to some effective allergen substitutions.
-                </p>
-                <button class="readbutton">
-                    <a href="pages/readme3.html" class="read-more">Read More</a>
-                </button>
+                <img class="img" src="images/milk.jpg" alt="a strawberry and splashing milk on a spoon">
+                <div class="post-text">
+                    <h2 class="post-title">Allergen Substitutions</h2>
+                    <p class="blog-content">
+                        Finding suitable substitutes for common allergens can make a significant difference in your cooking and baking. Here’s a guide to some effective allergen substitutions.
+                    </p>
+                    <button class="readbutton">
+                        <a href="pages/readme3.html" class="read-more">Read More</a>
+                    </button>
+                </div>
             </article>
         </div>
     </section>
