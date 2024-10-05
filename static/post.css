@@ -18,20 +18,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns for image and text */
     gap: 5rem; /* Space between both rows and columns */
-    align-items: start; /* Align items at the start of the row */
-    row-gap: 50rem; /* Adjust row gap for better spacing between rows */
+    align-items: start; 
+    row-gap: 50rem; 
 }
 
 /* Image styling for posts */
 .post img {
-    width: 100%; /* Full width in its column */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
     max-height: 200px;
     padding: 1rem;
     background-color: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
     box-shadow: 0 4px 15px 0 rgba(255, 118, 140, 0.75);
     opacity: 80%;
-    object-fit: cover; /* Ensures image covers area without stretching */
+    object-fit: cover; 
     margin: auto;
 }
 

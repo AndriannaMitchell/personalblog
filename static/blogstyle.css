@@ -1,15 +1,12 @@
-/* Parent container for the two-column layout */
 .blog-container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-     /* Two equal-width columns */
-    grid-gap: 2rem; /* Spacing between the two columns */
-    width: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    width: 90%;
     padding: 2rem;
     margin-top: 1%;
 }
 
-/* Blog section styling */
 .blogsection {
     border: none;
     font-family: var(--Roboto);
@@ -19,24 +16,21 @@
     padding: 3rem;
     text-align: center;
     width: 100%;
-    height: 100%; /* Ensures both sections align well */
-    box-sizing: border-box;
+    height: auto;
     display: block;
+    box-sizing: border-box;
 }
 
-/* Blogpage styling */
 .blogpage {
     border-radius: 0.5rem;
     border: none;
-    background-color: none;
-    text-align: left;     
+    text-align: left;
     padding: 3rem;
-    width: 100%; /* Adjusted to fit grid column */
-    height: 100%; /* Ensures alignment with blogsection */
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
-/* Image styling within blogsection */
 .blogsection img {
     max-width: 400px;
     height: 300px;
@@ -48,7 +42,6 @@
     margin: auto;
 }
 
-/* Social Media Section Styling */
 .social-media {
     text-align: center;
     padding: 2rem;
@@ -57,19 +50,18 @@
 
 .social-icons a {
     margin: 0 1rem;
-    color: #555; /* Neutral color */
+    color: #555;
     font-size: 1.8rem;
-    transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+    transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-    color: #ff7eb3; /* Accent color on hover */
+    color: #ff7eb3;
 }
 
-/* Modern Footer Styling */
 .footer {
-    background-color: #222; /* Dark background for contrast */
-    color: #fff; /* White text for readability */
+    background-color: #222;
+    color: #fff;
     padding: 2rem 0;
     text-align: center;
 }
@@ -77,7 +69,7 @@
 .footer-content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    font-family: var(--Playfair); /* Use a decorative font for the title */
+    font-family: var(--Playfair);
 }
 
 .footer-content p {
@@ -97,31 +89,16 @@
 }
 
 .footer-links a {
-    color: #ff7eb3; /* Accent color */
+    color: #ff7eb3;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease-in-out; /* Smooth color change */
+    transition: color 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
-    color: #fff; /* Invert to white on hover */
+    color: #fff;
 }
 
-/* Responsive Media Queries */
-@media (max-width: 768px) {
-    .footer-content h2 {
-        font-size: 1.5rem;
-    }
-
-    .social-icons a {
-        font-size: 1.5rem;
-        margin: 0 0.5rem;
-    }
-}
-
-/* Responsive Media Queries */
-
-/* Medium devices (tablets) */
 @media (max-width: 768px) {
     .footer-content h2 {
         font-size: 1.5rem;
@@ -132,25 +109,23 @@
         margin: 0 0.5rem;
     }
 
-    /* Stack grid items in a single column */
     .blog-container {
-        grid-template-columns: 1fr; /* Stacks the grid items vertically */
+        grid-template-columns: 1fr;
     }
 
     .blogsection, .blogpage {
-        width: 100%; /* Full width */
-        padding: 1rem; /* Adjust padding */
+        width: 100%;
+        padding: 1rem;
     }
 }
 
-/* Small devices (mobile phones) */
 @media (max-width: 480px) {
     .blogsection {
         font-size: 1.2rem;
-        padding: 0.5rem; /* Adjust padding for mobile */
+        padding: 0.5rem;
     }
 
     .blog-container {
-        padding: 1rem; /* Reduce padding */
+        padding: 1rem;
     }
 }
