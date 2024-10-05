@@ -1,23 +1,22 @@
-
-.banner{
+.banner {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:var(--dark)
+    color: var(--dark);
+    padding: 2rem;
 }
 
-banner-title{
-    font-size: 15rem;
-    font-family: var(--Montserrat);
-    line-height: 4;
+.banner-title {
+    font-size: 3rem;
+    font-family: var(--Raleway);
+    line-height: 3;
 }
 
-.banner-title span{
-    font-family: var(--Playfair); 
-    color: var(--exDark); 
-    
+.banner-title span {
+    font-family: var(--Playfair);
+    color: var(--exDark);
 }
 
 .banner p {
@@ -30,9 +29,50 @@ banner-title{
 }
 
 .banner form {
-    background: #fff; 
+    background: #fff;
     border-radius: 2rem;
-    padding: 0.6rem 1rem; 
+    padding: 0.6rem 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 1024px) {
+    .banner-title {
+        font-size: 10rem;
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 7rem;
+    }
+
+    .banner p {
+        font-size: 1.3rem;
+    }
+
+    .banner form {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 4rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .banner form {
+        padding: 0.8rem;
+    }
 }
