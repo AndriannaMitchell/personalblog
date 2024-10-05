@@ -70,23 +70,34 @@ body {
 }
 
 .aboutme {
-    border-radius: 0.5rem;
-    border: 1px solid #e70fb1;
+    border-radius: 3%;
     overflow: hidden;
-    background-color:none;
-    text-align: center;     
-    padding: 5rem;          
-    width: 100%;              
-    box-sizing: border-box; 
+    background-color: none;
+    padding: 4rem;
+    width: 80%;
+    border: none;
+    font-family: var(--Playfair);
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px 0 rgba(5, 131, 5, 0.75);
+    border-radius: 5%;
+    text-align: center;
+    line-height: 200%;
 }
 
+.aboutme h2, .aboutme h4, .aboutme p {
+    margin-bottom: 1.5rem; /* Adjust this value for more or less space */
+}
+
+
 .aboutme img {
-    max-width: 50%;
-    height: auto;
+    width: 700px;
+    height: 600px;
     border-radius: 2rem;
     display: block;
     margin: 0 auto;
+    margin-bottom: 6rem;
     opacity: 85%;
+
 }
 
 

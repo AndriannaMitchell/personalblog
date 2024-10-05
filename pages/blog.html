@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
@@ -13,22 +15,20 @@
         <div class="header">
             <nav class="navbar">
                 <div class="container">
-                    <a href="C:\Users\16054\personal-blog\pages\design.html" class="navbar-brand">Eating.Safe</a>
+                    <a href="/pages/design.html" class="navbar-brand">Eating.Safe</a>
                     <div class="navbar-nav">
                         <a href="/index.html">Home</a>
-                        <a href="C:\Users\16054\personal-blog\pages\design.html">Recipes</a>
-                        <a href="C:\Users\16054\personal-blog\pages\blog.html">Blog</a>
-                        <a href="C:\Users\16054\personal-blog\pages\about.html">About</a>
+                        <a href="/pages/design.html">Recipes</a>
+                        <a href="/pages/blog.html">Blog</a>
+                        <a href="/pages/about.html">About</a>
                     </div>
                 </div>
             </nav>
             <div class="banner">
                 <div class="container">
-                    <h1 class="banner-title">
-                        <span>Eating.</span> With Allergies
-                    </h1>
+                    <h1 class="banner-title"><span>Eating.</span> With Allergies</h1>
                     <p>Everything that you want to know about food allergies</p>
-                    <form action="C:\Users\16054\personal-blog\pages\search.html" method="get" class="search-form">
+                    <form action="/pages/search.html" method="get" class="search-form">
                         <input type="text" name="query" class="search-input" placeholder="Find your food . . .">
                         <button type="submit" class="search-btn">
                             <i class="fas fa-search"></i>
@@ -41,14 +41,18 @@
 
     <!-- Blog Section Container -->
     <section class="blog-container">
-        <article class="blogpage">
-            <h2 class="post-title">Common Allergens: What You Need to Know</h2> 
-            <img src="/images/blogphoto1.jpg" alt="pink macarons stacked on top of each other with a pink background">
-            <q class="post-excerpt">In our increasingly health-conscious society, understanding common allergens has never been more crucial. Allergies can affect anyone, and knowing what to look out for can make a significant difference in managing your health and well-being. In this post, we’ll delve into some of the most common allergens and what makes them so problematic for many people.</q>
-<section>
-            <h2>1. Peanuts</h2>
-            <p>Peanuts are one of the most well-known allergens and can cause severe reactions, including anaphylaxis. They are commonly found in snacks, baked goods, and various sauces. It’s important to read labels carefully and be aware of cross-contamination.</p>
-        </section>
+        <!-- Article: Common Allergens -->
+        <article class="aboutme">
+            <h2 class="post-title">Common Allergens: What You Need to Know</h2>
+            <img class="post" src="/images/blogphoto1.jpg" alt="pink macarons stacked on top of each other with a pink background">
+            
+            <section>
+                <h4>In our increasingly health-conscious society, understanding common allergens has never been more crucial. Allergies can affect anyone, and knowing what to look out for can make a significant difference in managing your health and well-being. In this post, we’ll delve into some of the most common allergens and what makes them so problematic for many people.</h4>
+                
+                <h2>1. Peanuts</h2>
+                <p>Peanuts are one of the most well-known allergens and can cause severe reactions, including anaphylaxis. They are commonly found in snacks, baked goods, and various sauces. It’s important to read labels carefully and be aware of cross-contamination.</p>
+            </section>
+
             <section>
                 <h2>2. Tree Nuts</h2>
                 <p>Tree nuts, including almonds, walnuts, and cashews, are another common allergen. They are often used in baking and cooking and can be hidden in foods like granola bars and sauces. Symptoms can range from mild rashes to severe respiratory issues.</p>
@@ -75,34 +79,37 @@
             </footer>
         </article>
 
-        <!-- Blog Section: About Me -->
-         
+        <!-- About Me Section -->
         <section class="blogsection">
-                      <h2>About Me</h2>
-            <img src="/images/headshot.jpeg" alt="headshot">
+            <h2>About Me</h2>
+            <img src="/images/headshot.jpeg" alt="headshot of Andrianna Mitchell">
             <h2 class="post-title">Andrianna Mitchell</h2>
-                    <h3>Mother and Software Engineer</h3>
-                    <p><strong>Current School:</strong> Southern New Hampshire University (Graduating in 2026)</p>
-                    <p>Hello! I’m Andrianna Mitchell, a dedicated mother of two wonderful girls with multiple allergies and a passionate software engineer. My journey as a parent has inspired me to use my coding skills to create a website that supports other families navigating the complexities of food allergies. I find joy in blending my love for coding and cooking, as both require precision and creativity. Through this platform, I strive to make safe eating resources accessible to everyone, reflecting my commitment to improving the quality of life for families like mine.</p>
-        </div>
+            <h3>Mother and Software Engineer</h3>
+            <p><strong>Current School:</strong> Southern New Hampshire University (Graduating in 2026)</p>
+            <q>Hello! I’m Andrianna Mitchell, a dedicated mother of two wonderful girls with multiple allergies and a passionate software engineer. My journey as a parent has inspired me to use my coding skills to create a website that supports other families navigating the complexities of food allergies. I find joy in blending my love for coding and cooking, as both require precision and creativity. Through this platform, I strive to make safe eating resources accessible to everyone, reflecting my commitment to improving the quality of life for families like mine.</q>
         </section>
+
         <!-- Popular Post Section -->
-        <article class="blogsection">
+        <section class="blogsection">
             <h2>Popular Post</h2>
             <ul>
-                <li><button class="blogsection"> 
-                    <a href="pages/readme3.html" class="read-more">Allergen Substitutions</a>
-                </button></li>
-                <li><button class="blogsection">
-                    <a href="pages/readme2.html" class="read-more">The Basics of Allergies</a>
-                </button></li>
+                <li>
+                    <button class="readbutton">
+                        <a href="/pages/readme3.html" class="read-more">Allergen Substitutions</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="readbutton">
+                        <a href="/pages/readme2.html" class="read-more">The Basics of Allergies</a>
+                    </button>
+                </li>
             </ul>
-        </article>
+        </section>
 
         <!-- Social Media Section -->
-        <article class="blogsection">
+        <section class="blogsection">
             <h3>Follow Me</h3>
-            
+            <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank" class="facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -112,14 +119,22 @@
                 <a href="https://www.linkedin.com" target="_blank" class="linkedin">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-           
-        </article>
+            </div>
+        </section>
     </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        <h2>Footer</h2>
-    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Eating.Safe</h2>
+            <p>&copy; 2024 Eating.Safe. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
-

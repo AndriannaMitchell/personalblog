@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header>
         <div class="header">
             <nav class="navbar">
                 <div class="holder">
-                    <a href="index.html" class="navbar-brand">Eating.Safe</a>
+                    <a href="/index.html" class="navbar-brand">Eating.Safe</a>
                     <div class="navbar-nav">
                         <a href="index.html">Home</a>
                         <a href="design.html">Recipes</a>
                         <a href="blog.html">Blog</a>
-                        <a href="about.html">About</a>
+                        <a href="/pages/about.html">About</a>
                     </div>
                 </div>
             </nav>
@@ -34,26 +38,32 @@
     </header>
 
     <main>
-        <div class="container">
-            <section class="about-me">
-                <article class="aboutme">
-                    <img src="headshot.jpeg" alt="Picture of Andrianna Mitchell">
-                    <h2 class="post-title">Andrianna Mitchell</h2>
-                    <h3 class="post-subtitle">Mother and Software Engineer</h3>
-                    <p><strong>Current School:</strong> Southern New Hampshire University (Graduating in 2026)</p>
-                    <p>Hello! I’m Andrianna Mitchell, a dedicated mother of two wonderful girls with multiple allergies and a passionate software engineer. My journey as a parent has inspired me to use my coding skills to create a website that supports other families navigating the complexities of food allergies. I find joy in blending my love for coding and cooking, as both require precision and creativity. Through this platform, I strive to make safe eating resources accessible to everyone, reflecting my commitment to improving the quality of life for families like mine.</p>
-                    <p><strong>Connect with me:</strong></p>
-                    <ul class="social-links">
-                        <li><a href="https://linkedin.com/in/andrianna-mitchell" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    </ul>
-                </article>
-            </section>
+        <div class="blog-container">
+            <article class="aboutme">
+                <img src="/images/headshot.jpeg" alt="Picture of Andrianna Mitchell">
+                <h2 class="post-title">Andrianna Mitchell</h2>
+                <h3 class="post-subtitle">Mother and Software Engineer</h3>
+                <p><strong>Current School:</strong> Southern New Hampshire University (Graduating in 2026)</p>
+                <p>Hello! I’m Andrianna Mitchell, a dedicated mother of two wonderful girls with multiple allergies and a passionate software engineer. My journey as a parent has inspired me to use my coding skills to create a website that supports other families navigating the complexities of food allergies. I find joy in blending my love for coding and cooking, as both require precision and creativity. Through this platform, I strive to make safe eating resources accessible to everyone, reflecting my commitment to improving the quality of life for families like mine.</p>
+                <p><strong>Connect with me:</strong></p>
+                <ul class="social-links">
+                    <li><a href="https://linkedin.com/in/andrianna-mitchell" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </article>
         </div>
     </main>
 
-    <footer>
-        
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Eating.Safe</h2>
+            <p>&copy; 2024 Eating.Safe. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
     </footer>
-
 </body>
 </html>

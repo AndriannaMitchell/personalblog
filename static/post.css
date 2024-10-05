@@ -3,9 +3,10 @@
     padding: 4rem 0;
     background-color: #faf5f6;
     font-weight: 300;
-    word-spacing: auto;
-    line-height: auto;
+    word-spacing: normal;
+    line-height: 1.5;
     font-size: 1.2rem;
+    
 }
 
 /* Individual post container with grid layout */
@@ -71,7 +72,7 @@
     box-shadow: 0 4px 15px 0 rgba(255, 118, 140, 0.75);
     margin: auto;
     border-style: inherit;
-    border-radius: 50%;
+    border-radius: 5%;
     opacity: 50%;
 }
 
