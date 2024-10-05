@@ -5,38 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/style.css">
 </head>
-</html>
-
 <body>
     <header>
         <div class="header">
             <nav class="navbar">
                 <div class="container">
-                    <a href="index.html" class="navbar-brand">Eating.Safe</a>
+                    <a href="/index.html" class="navbar-brand">Eating.Safe</a>
                     <div class="navbar-nav">
-                        <a href="index.html">Home</a>
-                        <a href="design.html">Recipes</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="about.html">About</a>
+                        <a href="/pages/index.html">Home</a>
+                        <a href="/pages/design.html">Recipes</a>
+                        <a href="/pages/blog.html">Blog</a>
+                        <a href="/pages/about.html">About</a>
                     </div>
                 </div>
             </nav>
-            <body>
-                <section class="blog-posts">
-                    <div class="container">
-                        <article class="post">
-                    <img src="milk.jpg" alt="Allergen Substitutions">
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <div class="container">
+                <article>
+                    <img src="/images/milk.jpg" alt="Allergen Substitutions">
                     <h2 class="post-title">Allergen Substitutions</h2>
                     <p class="post-excerpt">Finding suitable substitutes for common allergens can make a significant difference in your cooking and baking. Whether you’re dealing with dairy, eggs, nuts, or gluten, there are various alternatives that can help you create delicious and safe meals. Here’s a guide to some effective allergen substitutions.</p>
 
                     <section>
                         <h3>1. Dairy Substitutes</h3>
                         <p>If you're avoiding dairy, there are plenty of alternatives available:</p>
-                        <ul class="post">
+                        <ul>
                             <li><strong>Milk:</strong> Almond milk, soy milk, oat milk, and coconut milk are great dairy-free options.</li>
                             <li><strong>Butter:</strong> Use coconut oil, olive oil, or vegan butter as a substitute for traditional butter in recipes.</li>
                             <li><strong>Cheese:</strong> Try cashew-based cheeses or store-bought vegan cheese alternatives made from soy or coconut.</li>
@@ -46,7 +48,7 @@
                     <section>
                         <h3>2. Egg Substitutes</h3>
                         <p>Eggs are often used in baking and cooking, but there are several alternatives you can use:</p>
-                        <ul class="post">
+                        <ul>
                             <li><strong>Flaxseed Meal:</strong> Mix 1 tablespoon of flaxseed meal with 2.5 tablespoons of water and let it sit until it forms a gel-like consistency.</li>
                             <li><strong>Chia Seeds:</strong> Similar to flaxseed meal, mix 1 tablespoon of chia seeds with 3 tablespoons of water and allow it to gel.</li>
                             <li><strong>Applesauce:</strong> Use 1/4 cup of unsweetened applesauce as a substitute for one egg in baking recipes.</li>
@@ -56,29 +58,27 @@
                     <section>
                         <h3>3. Nut Substitutes</h3>
                         <p>For those with nut allergies, there are various alternatives to use in recipes:</p>
-                        <ul class="post">
+                        <ul>
                             <li><strong>Nut Butters:</strong> Sunflower seed butter and soy nut butter can replace peanut butter or almond butter.</li>
                             <li><strong>Nut Flours:</strong> Use oat flour, rice flour, or coconut flour as alternatives to almond flour or hazelnut flour in baking.</li>
                         </ul>
                     </section>
-
-                    <section>
-                        <h3>4. Gluten Substitutes</h3>
-                        <p>For a gluten-free diet, consider these flour alternatives:</p>
-                        <ul class="post">
-                            <li><strong>Gluten-Free Flour Blends:</strong> These are pre-mixed blends of rice flour, potato starch, and tapioca flour.</li>
-                            <li><strong>Almond Flour:</strong> Made from ground almonds, it’s a great substitute for wheat flour in many recipes.</li>
-                            <li><strong>Chickpea Flour:</strong> Also known as besan, chickpea flour works well in savory dishes and batters.</li>
+                   
                         </ul>
                     </section>
 
-                    <footer>
-                        <h2>Conclusion</h2>
-                        <p>Substituting allergens in recipes can be a simple way to make meals safer for those with allergies. By using these alternatives, you can enjoy your favorite dishes without compromising on taste or texture. Always check the labels of your substitutes to ensure they meet your dietary needs and preferences.</p>
-                    </footer>
-                </article>
-            </div>
-        </section>
-    </main>
+                    
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Eating.Safe</h2>
+            <p>&copy; 2024 Eating.Safe. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

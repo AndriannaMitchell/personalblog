@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="/static/style.css">
 </head>
-</html>
-
 <body>
     <header>
         <div class="header">
             <nav class="navbar">
                 <div class="container">
-                    <a href="index.html" class="navbar-brand">Eating.Safe</a>
+                    <a href="/index.html" class="navbar-brand">Eating.Safe</a>
                     <div class="navbar-nav">
-                        <a href="index.html">Home</a>
-                        <a href="design.html">Recipes</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="about.html">About</a>
+                        <a href="/index.html">Home</a>
+                        <a href="/pages/design.html">Recipes</a>
+                        <a href="/pages/blog.html">Blog</a>
+                        <a href="/pages/about.html">About</a>
                     </div>
                 </div>
             </nav>
-            <body>
-                <section class="blog-posts">
-                    <div class="container">
-                        <article class="post">
-                    <img src="shrimp.jpg" alt="Post Image 3">
-                    <h2 class="post-title">The Basics of Allergies</h2>
-                    <p class="blog-posts">Understanding the basics of allergies is essential for anyone looking to manage or avoid allergic reactions. Allergies occur when the immune system reacts to a substance (allergen) as if it were a threat. Here’s a primer on what allergies are, common types, and how to manage them.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <div class="container">
+                <article class="post">
+                    <img src="/images/shrimp.jpg" alt="Post Image 3">
+                    <h2 class="post-text">The Basics of Allergies</h2>
+                    <p class="post-excerpt">Understanding the basics of allergies is essential for anyone looking to manage or avoid allergic reactions. Allergies occur when the immune system reacts to a substance (allergen) as if it were a threat. Here’s a primer on what allergies are, common types, and how to manage them.</p>
 
                     <section>
                         <h3>1. What Are Allergies?</h3>
@@ -40,14 +44,13 @@
 
                     <section>
                         <h3>2. Common Types of Allergies</h3>
-                        <p>Allergies can manifest in various forms. Some of the most common include:
-                            <ul class="post-excerpt"></ul>
-                                <li><strong>Seasonal Allergies</strong>: Often caused by pollen from trees, grasses, and weeds.</li>
-                                <li><strong>Food Allergies</strong>: Reactions to specific foods such as peanuts, shellfish, and dairy.</li>
-                                <li><strong>Drug Allergies</strong>: Adverse reactions to certain medications.</li>
-                                <li><strong>Insect Allergies</strong>: Reactions to stings or bites from insects like bees or mosquitoes.</li>
-                            </ul>
-                        </p>
+                        <p>Allergies can manifest in various forms. Some of the most common include:</p>
+                        <ul class="post-excerpt">
+                            <li><strong>Seasonal Allergies</strong>: Often caused by pollen from trees, grasses, and weeds.</li>
+                            <li><strong>Food Allergies</strong>: Reactions to specific foods such as peanuts, shellfish, and dairy.</li>
+                            <li><strong>Drug Allergies</strong>: Adverse reactions to certain medications.</li>
+                            <li><strong>Insect Allergies</strong>: Reactions to stings or bites from insects like bees or mosquitoes.</li>
+                        </ul>
                     </section>
 
                     <section>
@@ -73,7 +76,21 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Eating.Safe</h2>
+            <p>&copy; 2024 Eating.Safe. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li> 
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
+
 
 
