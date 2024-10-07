@@ -1,24 +1,48 @@
 .blog-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 2rem;
-    width: 90%;
-    padding: 2rem;
+    grid-template-columns: 2fr 1fr; /* Two columns: left (large) and right (small) */
+    grid-gap: 1rem; /* Space between the columns */
+    width: 100%; 
+    padding: 1rem;
     margin-top: 1%;
+    margin: auto;
 }
 
+.blog-left {
+    grid-column: 1; 
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+
+.blog-right {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-gap: 1rem; 
+}
+
+
+.blog-right1, .blog-right2, .blog-right3 {
+    background-color: #faf5f6; 
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+/* General styling for blog sections */
 .blogsection {
     border: none;
     font-family: var(--Roboto);
     font-size: 1.5rem;
-    box-shadow: 0 4px 15px 0 rgba(5, 131, 5, 0.75);
+    box-shadow: 0 4px 15px rgba(5, 131, 5, 0.75);
     border-radius: 5%;
     padding: 3rem;
     text-align: center;
     width: 100%;
     height: auto;
     display: block;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    color: #333; 
 }
 
 .blogpage {
@@ -36,8 +60,8 @@
     height: 300px;
     padding: 1rem;
     background-color: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-    box-shadow: 0 4px 15px 0 rgba(255, 118, 140, 0.75);
-    opacity: 80%;
+    box-shadow: 0 4px 15px rgba(255, 118, 140, 0.75);
+    opacity: 0.8;
     object-fit: cover;
     margin: auto;
 }
@@ -99,6 +123,7 @@
     color: #fff;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .footer-content h2 {
         font-size: 1.5rem;
@@ -110,22 +135,30 @@
     }
 
     .blog-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+    }
+
+    .blog-left, .blog-right1, .blog-right2, .blog-right3 {
+        width: 100%; 
+    }
+
+    .blog-right {
+        grid-template-rows: none; 
     }
 
     .blogsection, .blogpage {
         width: 100%;
-        padding: 1rem;
+        padding: 1rem; 
     }
 }
 
 @media (max-width: 480px) {
     .blogsection {
-        font-size: 1.2rem;
-        padding: 0.5rem;
+        font-size: 1.2rem; 
+        padding: 0.5rem; 
     }
 
     .blog-container {
-        padding: 1rem;
+        padding: 1rem; 
     }
 }

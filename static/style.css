@@ -15,7 +15,7 @@
 }
 
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
     font-family: var(--Raleway);
 }
@@ -23,6 +23,7 @@
 body {
     line-height: 1.4;
     color: var(--dark);
+    background-color: var(--exDark);
 }
 
 .container {
@@ -46,8 +47,8 @@ body {
 
 .container {
     max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: auto;
+    padding: 0;
 }
 
 .read-more {
@@ -76,11 +77,11 @@ body {
     box-shadow: 0 4px 15px 0 rgba(5, 131, 5, 0.75);
     border-radius: 5%;
     text-align: center;
-    line-height: 200%;
+    line-height: 1.8;
 }
 
 .aboutme h2, .aboutme h4, .aboutme p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .aboutme img {
@@ -90,7 +91,7 @@ body {
     border-radius: 2rem;
     display: block;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     opacity: 85%;
 }
 
@@ -106,41 +107,51 @@ ul li, ol li {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .post {
-        margin: 1rem 0;
+    .container {
+        padding: 0.5rem; 
     }
 
-    .post-title {
-        font-size: 1.5rem;
-    }
-
-    .post-excerpt {
-        font-size: 0.9rem;
-    }
-
-    .read-more {
-        font-size: 0.9rem;
+    .header {
+        padding: 1.5rem;
     }
 
     .aboutme {
         width: 90%;
-        padding: 2rem;
-    }
-
-    .aboutme img {
-        max-width: 80%;
-        margin-bottom: 4rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .aboutme {
-        width: 100%;
         padding: 1.5rem;
     }
 
     .aboutme img {
-        max-width: 100%;
+        max-width: 80%;
         margin-bottom: 3rem;
+    }
+
+    .footer-links li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0.25rem; /* Further reduced padding for small mobile devices */
+    }
+
+    .header {
+        padding: 1rem;
+    }
+
+    .aboutme {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .aboutme img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer-links li {
+        display: block;
+        margin: 0.5rem 0;
     }
 }

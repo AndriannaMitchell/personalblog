@@ -1,27 +1,25 @@
 /* Blog posts container */
-.blog-posts {
+.blog-posts .boxparagraph {
     padding: 4rem 0;
     background-color: #faf5f6;
     font-weight: 300;
     word-spacing: normal;
     line-height: 1.5;
     font-size: 1.2rem;
-    
 }
 
 /* Individual post container with grid layout */
 .post {
     border-radius: 1rem;
     overflow: hidden;
-    padding: .5rem;
+    padding: 0.5rem;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns for image and text */
-    gap: 5rem; /* Space between both rows and columns */
+    gap: 3rem; 
     align-items: start; 
-    row-gap: 50rem; 
+    row-gap: 2rem; 
 }
-
 /* Image styling for posts */
 .post img {
     width: 100%; 
@@ -47,16 +45,13 @@
 .post-title {
     font-size: 2rem;
     margin: 2rem;
-    text-align:center;
+    text-align: center;
 }
 
 /* Post excerpt text */
 .post-excerpt {
-    
     color: #050000;
     text-align: right;
-   
-    
 }
 
 /* Read button styling */
@@ -65,7 +60,7 @@
     font-family: var(--Roboto);
     font-size: 1.5rem;
     width: 40%;
-    height: 20%;
+    height: auto;
     outline: 0;
     padding: 0.6rem 0;
     background-color: rgba(255, 118, 140, 0.75);
@@ -91,33 +86,37 @@ q {
 /* Responsive media query for screens below 768px */
 @media (max-width: 768px) {
     .post {
-        grid-template-columns: 1fr; /* Stack image and text vertically */
-        gap: 2rem;
+        grid-template-columns: 1fr; /* Single column for mobile screens */
+        gap: 2rem; /* Reduced gap for smaller screens */
     }
 
     .post img {
-        width: 100%; /* Full width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        max-height: none; /* Allow the image to resize flexibly */
         padding: 1rem;
     }
 
+    .post-title {
+        font-size: 1.75rem; /* Slightly smaller title on medium screens */
+    }
+
     .readbutton {
-        width: 80%; /* Full width for buttons on small screens */
+        width: 60%; /* Make the button wider on mobile */
     }
 }
 
 /* Media query for very small devices (below 480px) */
 @media (max-width: 480px) {
     .post-title {
-        font-size: 1.5rem; /* Smaller font size for post titles */
+        font-size: 1.5rem; /* Smaller title for small devices */
+        margin: 1rem; /* Reduced margin */
     }
 
     .post-excerpt {
-        font-size: 1rem; /* Smaller font size for post excerpts */
+        font-size: 1rem; /* Smaller font for post excerpts */
     }
 
     .readbutton {
-        font-size: 1.2rem; /* Adjust button font size */
-        width: 100%; /* Full width on very small screens */
+        font-size: 1.2rem; 
+        width: 100%; /* Full width button for small screens */
     }
 }
